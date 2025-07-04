@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+    // ССЫЛКИ:
+    int num = 0, &copy = num;
+    
+    cout << "Enter num: ";
+    cin >> num;
+
+    cout << num << endl << copy << endl;
+    cout << &num << endl << &copy << endl;
+
+
+    // УКАЗАТЕЛИ:
+    int val = 0, * ptr_val = &val;
+
+    cout << val << endl << ptr_val << endl;
+    cout << &val << endl << * ptr_val << endl;
+
+    ptr_val = nullptr;
+    
+    cout << val << endl << ptr_val << endl;
+    cout << &val << endl << &ptr_val << endl;
+
+    return 0;
+}
